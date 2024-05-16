@@ -26,6 +26,6 @@ public class GoogleImageSearchStepDefinitions {
 
   @Then("at least top {int} matching images should be shown")
   public void topTenMatchedImagesShouldBeShown(int resultsCount) {
-    $$(".rg_i").shouldHave(sizeGreaterThanOrEqual(resultsCount));
+    $$(".ivg-i").shouldHave(sizeGreaterThanOrEqual(resultsCount));
   }
 }
