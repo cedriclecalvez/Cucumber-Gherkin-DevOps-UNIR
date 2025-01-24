@@ -16,7 +16,7 @@ pipeline {
         {
             steps {
                 catchError(buildResult: 'UNSTABLE', stageResult: 'FAILURE') {
-                    bat 'run_mvn_test.bat'
+                    bat 'cd \\wsl.localhost\\Ubuntu-20.04\\usr\\share\\maven\\bin && mvn test'
                 }
             }
         }
