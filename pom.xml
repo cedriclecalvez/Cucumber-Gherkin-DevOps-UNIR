@@ -25,7 +25,9 @@
           <systemPropertyVariables>
             <selenide.headless>true</selenide.headless>
             <selenide.downloadsFolder>target/downloads</selenide.downloadsFolder>
-	    <selenide.holdBrowserOpen>false</selenide.holdBrowserOpen>
+	          <selenide.holdBrowserOpen>false</selenide.holdBrowserOpen>
+            <cucumber.publish.enabled>false</cucumber.publish.enabled>
+            <cucumber.plugin>html:target/cucumber.html</cucumber.plugin>
           </systemPropertyVariables>
         </configuration>
       </plugin>
