@@ -2,7 +2,7 @@
 
 [![notion](https://img.shields.io/website?label=My-Notion&style=for-the-badge&url=https://www.notion.so/CV-Cedric-Le-Calvez-475b45d1396b4019a70177654d07e76c)](https://www.notion.so/CV-Cedric-Le-Calvez-475b45d1396b4019a70177654d07e76c)
 
-## I'm a Husband, Father, and Web Developers!!
+## I'm a Husband, Father, and Web Developer!!
 
 - 🌱 I’m currently learning everything 🤣
   
