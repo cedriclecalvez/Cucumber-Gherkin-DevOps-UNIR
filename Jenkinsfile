@@ -24,7 +24,7 @@ pipeline {
         stage('Results')
         {
             steps {
-                cucumber fileIncludePattern: 'cucumber.json', jsonReportDirectory: 'target/', reportTitle: 'Cucumber Reports',failedScenariosNumber:'1', buildStatus:'FAILURE'
+                cucumber fileIncludePattern: 'cucumber.json', jsonReportDirectory: 'target/', reportTitle: 'Cucumber Reports',failedScenariosNumber:1, buildStatus:'FAILURE'
             }
         }
     }
