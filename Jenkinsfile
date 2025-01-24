@@ -2,21 +2,13 @@ pipeline {
     agent any
     
     stages {
-        stage('Get Code')
-        {
-            steps{
-                bat 'dir'
-                bat 'echo %WORKSPACE%'
-            }
-        }
+      
         stage('Get Code') {
             steps {
-                // Obtener código del repo
-                // git branch: "master", url: 'https://github.com/anieto-unir/cucumber-helloworld.git'
-				script {
-					scmVars = checkout scm
-					echo 'scm : the commit id is ' + scmVars.GIT_COMMIT
-				}
+                bat 'dir'
+                bat 'echo %WORKSPACE%'
+                git url: 'https://github.com/cedriclecalvez/Cucumber-Gherkin-DevOps-UNIR'
+				
             }
         }
         
@@ -32,7 +24,7 @@ pipeline {
         stage('Results')
         {
             steps {
-                cucumber fileIncludePattern: 'cucumber.json', jsonReportDirectory: 'target/', reportTitle: 'Cucumber Reports'
+                cucumber fileIncludePattern: 'cucumber.json', jsonReportDirectory: 'target/', reportTitle: 'Cucumber Reports',failedScenariosNumber:'1', buildStatus:'FAILURE'
             }
         }
     }
