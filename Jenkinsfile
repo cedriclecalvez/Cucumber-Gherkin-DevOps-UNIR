@@ -16,7 +16,7 @@ pipeline {
         {
             steps {
                 catchError(buildResult: 'UNSTABLE', stageResult: 'FAILURE') {
-                    bat 'mvn test'
+                    bat 'wsl mvn test'
                 }
             }
         }
