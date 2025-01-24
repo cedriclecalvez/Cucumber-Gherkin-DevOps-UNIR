@@ -17,7 +17,7 @@ pipeline {
             steps {
                 catchError(buildResult: 'UNSTABLE', stageResult: 'FAILURE') {
                     bat '''
-                    powershell -Command "wsl cd /usr/share/maven/bin ./mvn test"
+                     powershell -Command "wsl bash -c 'cd /usr/share/maven/bin && ./mvn test'"
                     '''
                 }
             }
